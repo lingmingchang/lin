@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import defaultPage from '@/views/layout/default';
-import blankPage from '@/views/layout/blank';
-import Index from '@/views/page/index';
+import defaultPage from '_v/layout/default';
+import blankPage from '_v/layout/blank';
+import Index from '_v/page/index';
 
 
 Vue.use(VueRouter)
