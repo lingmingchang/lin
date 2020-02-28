@@ -1,28 +1,39 @@
-.el-header,.el-main,.el-footer{
+.el-header,
+.el-main,
+.el-footer {
     width: 1190px;
     margin: 0 auto;
     padding: 0;
     overflow: unset;
 }
 
-.el-header{
-    background: #F8F8F8;
+.el-main {
+    overflow: unset !important;
+    padding: 0 !important;
+}
+
+.el-header {
+    // background: #F8F8F8;
+    background: #fff;
+    box-shadow: 0 2px 27px 0 rgba(0, 0, 0, 0.10);
     color: #999;
     width: 100%;
     font-size: 12px;
-    .m-header{
-        width: 1190px;
+    padding: 0 !important;
+
+    .m-header {
+        // width: 1190px;
         margin: 0 auto;
     }
 }
 
-.layout-default{
+.layout-default {
     -webkit-font-smoothing: antialiased;
     font-family: "-apple-system",
-    BlinkMacSystemFont,
-    Roboto,
-    "Helvetica Neue",
-    "MIcrosoft YaHei",
-    sans-serif !important;
+        BlinkMacSystemFont,
+        Roboto,
+        "Helvetica Neue",
+        "MIcrosoft YaHei",
+        sans-serif !important;
     background-color: #F8F8F8;
 }

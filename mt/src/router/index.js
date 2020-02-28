@@ -2,20 +2,30 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import defaultPage from '_v/layout/default';
 import blankPage from '_v/layout/blank';
-import Index from '_v/page/index';
+import index from '_v/page/index';
+import goodsList from '_v/page/goodsList.vue';
+import changeCity from '_v/page/changeCity.vue';
 
 
 Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    name: 'defaultPage',
+    name: 'default',
     component: defaultPage,
     redirect: "/index",
     children: [{
+      path: "s/:name",
+      name: "goods",
+      component: goodsList
+    }, {
       path: "/index",
       name: "index",
-      component: Index
+      component: index
+    }, {
+      path: "/changeCity",
+      name: "changeCity",
+      component: changeCity
     }]
   },
   {

@@ -52,6 +52,7 @@ export default {
     },
     blur() {
       let _this = this;
+      // 不加定时器，就会点不到显示的列表
       setTimeout(function() {
         _this.isFocus = false;
       }, 200);

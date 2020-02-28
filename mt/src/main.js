@@ -8,6 +8,16 @@ import '@/assets/css/main.css'
 
 Vue.config.productionTip = false
 
+// 注册一个全局自定义指令 `document-click`
+Vue.directive('document-click', {
+
+  bind(el, binding, vnode){
+    console.log(123)
+    document.addEventListener("click", binding.value, false);
+  }
+
+})
+
 Vue.use(ElementUI);
 
 new Vue({
