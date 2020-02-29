@@ -18,18 +18,19 @@
 export default {
   data() {
     return {
-      showWrapperActive: false
+      // showWrapperActive: false
     };
   },
-  props: ["list", "title", "value"],
+  props: ["list", "title", "value","showWrapperActive"],
   methods: {
     showWrapper(el) {
       el.stopPropagation();
-      this.showWrapperActive = true;
+      this.$emit("change_active", true);
+      // this.showWrapperActive = true;
     },
     documentClick() {
-        console.log(44444)
-      this.showWrapperActive = false;
+      this.$emit("change_active", false);
+      // this.showWrapperActive = false;
     }
   }
 };

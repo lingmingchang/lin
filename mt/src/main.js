@@ -12,7 +12,6 @@ Vue.config.productionTip = false
 Vue.directive('document-click', {
 
   bind(el, binding, vnode){
-    console.log(123)
     document.addEventListener("click", binding.value, false);
   }
 
